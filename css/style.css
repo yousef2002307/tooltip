@@ -1,0 +1,118 @@
+body {
+  background-color: #a1c4fc;
+}
+div {
+  width: 700px;
+  margin: 250px auto;
+  padding: 20px 0;
+  height: 300px;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  display: inline-block;
+  /* padding: 6px 21px; */
+  cursor: pointer;
+  font-size: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 25px;
+  width: 77px;
+  height: 77px;
+  text-align: center;
+  line-height: 77px;
+  color: #000;
+  transition: all linear 0.3s;
+  position: relative;
+  top: 0;
+}
+ul li:hover {
+  background-color: #003087;
+  color: #fff;
+  top: 20px;
+}
+ul li:nth-of-type(2):hover {
+  background-color: #1769ff;
+  color: #fff;
+  top: 20px;
+}
+ul li:nth-of-type(3):hover {
+  background-color: #ff4500;
+  color: #fff;
+  top: 20px;
+}
+ul li:nth-of-type(4):hover {
+  background-color: #e60023;
+  color: #fff;
+  top: 20px;
+}
+ul li:nth-of-type(5):hover {
+  background-color: #ff8800;
+  color: #fff;
+
+  top: 20px;
+}
+ul li i {
+}
+span {
+  font-size: initial;
+  position: absolute;
+  top: -85px;
+  z-index: 4;
+  left: -6px;
+  /* padding: 10px 0; */
+  background-color: #003087;
+  /* width: 71px; */
+  height: 46px;
+  /* padding: 10px; */
+  line-height: 46px;
+  width: 92px;
+  border-radius: 44px;
+  color: #fff;
+  text-transform: capitalize;
+  opacity: 0;
+}
+
+ul li:nth-of-type(2) span {
+  background-color: #1769ff;
+}
+ul li:nth-of-type(3) span {
+  background-color: #ff4500;
+}
+
+ul li:nth-of-type(4) span {
+  background-color: #e60023;
+}
+ul li:nth-of-type(5) span {
+  background-color: #ff8800;
+}
+ul li span::before {
+  content: "";
+  position: absolute;
+  /* border-bottom: 23px solid #f00; */
+  /* width: 23px; */
+  /* display: block; */
+  top: 45px;
+  /* background-color: #ddd; */
+  /* color: #ddd; */
+  /* width: 20px; */
+  left: 36px;
+  /* z-index: 1; */
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #003087;
+  transform: rotate(180deg);
+}
+ul li:nth-of-type(2) span::before {
+  border-color: transparent transparent #1769ff;
+}
+ul li:nth-of-type(3) span::before {
+  border-color: transparent transparent #ff4500;
+}
+
+ul li:nth-of-type(4) span::before {
+  border-color: transparent transparent #e60023;
+}
+ul li:nth-of-type(5) span::before {
+  border-color: transparent transparent #ff8800;
+}
